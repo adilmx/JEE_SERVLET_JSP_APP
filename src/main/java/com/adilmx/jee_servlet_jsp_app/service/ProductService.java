@@ -9,6 +9,7 @@ public interface ProductService {
     public List<Product> findAll();
     public List<Product> findByName(String keyWord);
     public Product update(Product product);
+    public Product findById(Long id);
     public int delete(Long id);
     public void initCatalog();
 
