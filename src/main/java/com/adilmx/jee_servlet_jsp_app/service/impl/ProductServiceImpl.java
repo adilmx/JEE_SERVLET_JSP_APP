@@ -58,6 +58,7 @@ public class ProductServiceImpl implements ProductService {
         }
         return -1;
     }
+    
 
     @Override
     public void initCatalog() {
@@ -65,4 +66,12 @@ public class ProductServiceImpl implements ProductService {
         save(new Product(null,"PHONE",5000));
         save(new Product(null,"TELEVISION",7000));
     }
+
+    @Override
+	public Product findById(Long id) {
+    	return products.get(id);
+	}
+	
+
+	
 }
